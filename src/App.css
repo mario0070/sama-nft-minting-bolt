@@ -1,0 +1,220 @@
+body{
+  background-color:#0a2540;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.navbar{
+  /* background-color: #0a2540; */
+  padding: 2em 2em;
+  justify-content: space-between;
+  color: azure;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar img{
+  width: 40px;
+  margin-left: 1em;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar button{
+  background-color: #0052ff;
+  border: none;
+  padding: .8em;
+}
+
+.hero .bg{
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.hero .text{
+  background-color: rgba(0, 0, 0, 0.384);
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 600px;
+  color: azure;
+  overflow: hidden;
+}
+
+.hero .text .flex{
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+
+.hero .text .flex .img{
+  transform: translateY(-100px);
+  position: relative;
+  z-index: -1;
+}
+
+.hero .text .flex .img img{
+  width: 500px;
+}
+
+.hero .text .flex .img .spin{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: spinner .2s infinite;
+  margin-bottom: 4em;
+}
+
+@keyframes spinner {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+}
+
+.hero .text .flex h1{
+  font-size: 4em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero .text .flex button{
+  background-color: #0052ff;
+  padding:.5em 1em;
+  margin-right: 1em;
+  color: azure;
+  font-weight: 600;
+}
+
+.section1, .section2{
+  padding: 0em 2em;
+  color: azure;
+  margin-bottom: 3em;
+}
+
+.section2 .easy{
+  font-size: 1.2em;
+  color: #0052ff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section2 .how{
+  font-size: 4em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section2 .d-flex{
+  justify-content: space-evenly;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section2 .d-flex h1{
+  color: #0052ff;
+  font-size: 3em;
+}
+
+.section1 .img{
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  background-color: #07325c;
+  box-shadow: .1em .1em 1em rgba(0, 0, 0, 0.187);
+  padding: 1em;
+  text-align: center;
+  border-radius: 6px;
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+.section1 .d-flex{
+  justify-content: space-evenly;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.section1 .img img{
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content{
+  background-color: #07325c;
+  color: azure;
+}
+
+.modal .d-flex{
+  justify-content: space-evenly;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .section1, .section2{
+    padding: 0 1em;
+  }
+
+  .section2 .how{
+    font-size: 3em;
+  }
+  
+  .section2 .d-flex h1, .section2 .d-flex h4{
+    font-size: 2em;
+  }
+
+  .section2 .d-flex{
+    justify-content: start;
+  }
+
+  .section2 .flex{
+    display: block !important;
+  }
+
+  .section1 .img{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .hero .text .flex{
+    display: block !important;
+  }
+
+  .hero .text{
+    height: 900px;
+  }
+
+  .hero .bg{
+    height: 900px;
+  }
+
+  .hero .text .flex{
+    text-align: center;
+    padding: 0em 0em;
+  }
+  
+  .hero .text .flex .img{
+    text-align: center;
+    transform: translateY(0px);
+  }
+
+  .hero .text .flex .img img{
+    width: 300px;
+  }
+
+  .hero .text .flex .btns{
+    justify-content: space-evenly;
+  }
+
+  .hero .text .flex .btns button{
+    margin-right: 0em;
+  }
+
+  .navbar{
+    padding: 1em 1em;
+  }
+
+  .hero .text .flex .img .spin{
+    margin-left: 2em;
+  }
+  
+  
+}
